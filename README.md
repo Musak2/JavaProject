@@ -17,8 +17,8 @@ To run the library management system:
 1. Ensure you have Java installed on your system.
 2. Clone the repository to your local machine.
 3. Navigate to the `src` directory.
-4. Compile the Java files. For example, use `javac library/*.java models/*.java`.
-5. Run the `Main` class. For example, use `java library.Main`.
+4. Compile the Java files. 
+5. Run the `Main` class.
 
 ## Usage
 
