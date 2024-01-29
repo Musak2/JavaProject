@@ -2,6 +2,11 @@ package models;
 
 import interfaces.Readable;
 
+/**
+ * Abstract class representing a generic piece of literature.
+ * It implements the Readable interface, indicating that it can be read.
+ * This class serves as a base for more specific types of literature like books.
+ */
 public abstract class Literature implements Readable {
     private final String title;
     private final String author;
@@ -17,13 +22,17 @@ public abstract class Literature implements Readable {
         this.year = year;
     }
 
-    // Common getters
+    // Getter methods for each attribute.
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     public String getISBN() { return isbn; }
     public double getValue() { return value; }
     public Integer getYear() { return year; }
 
+    /**
+     * Implements the read action from the Readable interface.
+     * Currently, it simulates reading by printing a message to the console.
+     */
     @Override
     public void read() {
         System.out.println("\nReading " + title + " by " + author);
